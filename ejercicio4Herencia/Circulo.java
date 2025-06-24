@@ -2,15 +2,15 @@ package Herencia.ejercicio4Herencia;
 
 public class Circulo extends Figura{
 
-    protected static final double PI = 3.1416;
+    private static final double PI = 3.1416;
+    private double radio;
 
-    public Circulo() {
-        super(10.0);
+    public Circulo(double radio){
+        this.radio = radio;
     }
 
     @Override
     public double calcularArea(){
-        double radio = this.diametro / 2;
         return PI*(radio*radio);
     }
 }

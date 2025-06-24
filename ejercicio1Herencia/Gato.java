@@ -1,4 +1,8 @@
 package Herencia.ejercicio1Herencia;
 
-public class Gato {
+public class Gato extends Animal{
+    @Override
+    public void hacerSonido(){
+        System.out.println("Miau.");
+    }
 }
